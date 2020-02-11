@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000FFFF"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        app:cardCornerRadius="10dp"
+        tools:targetApi="o">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp">
+
+                <ImageView
+                    android:id="@+id/remove_popup"
+                    android:layout_width="@dimen/_14sdp"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:src="@drawable/remove" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_popup_edit" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_weight="4"
+                android:orientation="horizontal"
+                tools:targetApi="o">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:gravity="center"
+                    android:textColor="@drawable/textcolor"
+                    android:text="100ml"
+                    android:id="@+id/rdb_100"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginHorizontal="@dimen/_7sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiogroup100history"
+                    android:button="@null" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:gravity="center"
+                    android:textColor="@drawable/textcolor"
+                    android:text="200ml"
+                    android:id="@+id/rdb_200"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginHorizontal="@dimen/_7sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiogroup100history"
+                    android:button="@null" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                   android:gravity="center"
+                    android:textColor="@drawable/textcolor"
+                    android:text="300ml"
+                    android:id="@+id/rdb_300"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginHorizontal="@dimen/_7sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiogroup100history"
+                    android:button="@null" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:background="@drawable/radiogroup100history"
+                    android:id="@+id/rdb_400"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginHorizontal="@dimen/_7sdp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="400ml"
+                    android:textColor="@drawable/textcolor" />
+
+            </RadioGroup>
+            <Button
+                android:id="@+id/btn_ok"
+                android:textColor="#FFFF"
+                android:text="ACCEPT"
+                android:background="@drawable/round_bg"
+                android:layout_marginBottom="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_30sdp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

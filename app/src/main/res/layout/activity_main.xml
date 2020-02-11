@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.watertrackermain.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:id="@+id/root_main">
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </FrameLayout>
+    <View
+        android:id="@+id/view"
+        android:background="#747474"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"/>
+    <LinearLayout
+        android:id="@+id/ln_bottom"
+        android:background="#1F36A7"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+            <LinearLayout
+                android:layout_marginStart="-15dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-15dp">
+               <LinearLayout
+                   android:id="@+id/ln_main"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal" />
+                <LinearLayout
+                    android:id="@+id/ln_histoty"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:id="@+id/ln_setting"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:id="@+id/ln_weight"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ToggleButton
+            android:clickable="false"
+            android:layout_marginEnd="@dimen/_27sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_centerVertical="true"
+            android:id="@+id/tgbtn_waterdaily"
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_19sdp"
+            android:background="@drawable/onoff_dailywater"
+            android:checked="true"
+            android:padding="@dimen/_5sdp"
+            android:textOff=""
+            android:textOn=""
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_27sdp" />
+
+        <ToggleButton
+            android:clickable="false"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_27sdp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tgbtn_history"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_19sdp"
+            android:layout_toEndOf="@id/tgbtn_waterdaily"
+            android:layout_toRightOf="@id/tgbtn_waterdaily"
+            android:background="@drawable/onoff_history"
+            android:textOff=""
+            android:textOn=""
+            android:layout_marginRight="@dimen/_27sdp" />
+
+        <ToggleButton
+            android:clickable="false"
+            android:layout_toEndOf="@id/tgbtn_history"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tgbtn_setting"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_19sdp"
+            android:background="@drawable/onoff_setting"
+            android:textOff=""
+            android:textOn=""
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_toRightOf="@id/tgbtn_history" />
+
+        <ToggleButton
+            android:clickable="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:id="@+id/tgbtn_weight"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_19sdp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/onoff_weight"
+            android:textOff=""
+            android:textOn=""
+            android:layout_marginRight="@dimen/_20sdp" />
+        </RelativeLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:id="@+id/ln_add"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+         >
+            <Button
+
+                android:textSize="@dimen/_16ssp"
+                android:textColor="#FFF"
+                android:text="100+"
+                android:background="@drawable/button_selector2"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:background="@drawable/background_spalshone">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.9">
+
+            <TextView
+                android:textStyle="italic"
+                android:textSize="@dimen/_25sdp"
+                android:textColor="#FF5722"
+                android:text="NhiemVu Studio"
+                android:layout_above="@id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:fontFamily="@font/font"
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:text="Drink Water"
+                android:textColor="#d8d8d8"
+                android:textSize="@dimen/_10ssp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

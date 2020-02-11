@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.startactivity.StartActivitySecond"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginEnd="-5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/background_splash2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-5dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6.5">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_marginEnd="@dimen/_27ssp"
+                    android:layout_marginTop="@dimen/_45sdp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#C0BC6C"
+                    android:textSize="@dimen/_21ssp"
+                    android:text="Water help you"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_27ssp"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5">
+                <TextView
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tv1"
+                    android:gravity="center_horizontal"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_alignParentTop="true"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:text="Water helps your body remove waste,"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tv2"
+                    android:layout_below="@id/tv1"
+                    android:gravity="center_horizontal"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:text="aids indigestion, prevents you from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/tv2"
+                    android:gravity="center_horizontal"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:text="becoming dehydrated."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Button
+
+                    android:layout_below="@id/tv4"
+                    android:layout_marginTop="@dimen/_22sdp"
+                    android:id="@+id/btn_start2"
+                    android:background="@drawable/round_bg_button_splash"
+                    android:textColor="#FFF"
+                    android:text="LET'S GO"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_35sdp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

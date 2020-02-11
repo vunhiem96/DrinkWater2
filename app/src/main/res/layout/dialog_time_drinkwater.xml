@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000FFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ln_remove1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_cac"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/ln_remove2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/id_cac"
+        android:orientation="vertical" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:id="@+id/id_cac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_remove_dialog"
+                    android:layout_width="@dimen/_14sdp"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:src="@drawable/removex"
+                    android:layout_alignParentEnd="true" />
+                <ImageView
+                    android:id="@+id/seitting_wm"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:src="@drawable/settingx"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_toStartOf="@id/img_remove_dialog"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_toLeftOf="@id/img_remove_dialog"
+                    android:layout_marginRight="@dimen/_15sdp" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_180sdp"
+                        android:src="@drawable/wm" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        android:layout_width="@dimen/_75sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_15sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Time to\ndrink water"
+                            android:textColor="#252450"
+                            android:textSize="@dimen/_11ssp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btn_accept_service"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_31sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_25sdp"
+                android:background="@drawable/round_bg"
+                android:text="DRINK WATER"
+                android:textColor="#FFF" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

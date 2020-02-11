@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#0000FFFF">
+<androidx.cardview.widget.CardView
+    android:layout_marginEnd="@dimen/_25sdp"
+    android:layout_marginStart="@dimen/_25sdp"
+    app:cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/rl_reminderoff"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/reminderoff"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_toRightOf="@id/img"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:textColor="#666666"
+                android:textSize="16sp"
+                android:text="Reminder off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/img"
+                android:layout_marginStart="15dp" />
+            <ToggleButton
+                android:clickable="false"
+                android:id="@+id/tgbtn_reminderoff"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/togglebutton_gender"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentEnd="true" />
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="#F6F8FF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_reminder_vibrate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/reminderring"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_toRightOf="@id/img1"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:textColor="#666666"
+                android:textSize="16sp"
+                android:text="Vibrate only"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/img1"
+                android:layout_marginStart="15dp" />
+            <ToggleButton
+                android:clickable="false"
+                android:id="@+id/tgbtn_reminder_vibrate"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/togglebutton_gender"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentEnd="true" />
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="#F6F8FF" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_reminder_ring"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/reminderv"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_toRightOf="@id/img2"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:textColor="#666666"
+                android:textSize="16sp"
+                android:text="Ringtone with vibrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/img2"
+                android:layout_marginStart="15dp" />
+            <ToggleButton
+                android:clickable="false"
+                android:checked="true"
+                android:id="@+id/tgbtn_reminderring"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/togglebutton_gender"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentEnd="true" />
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="#F6F8FF" />
+        </RelativeLayout>
+        <Button
+            android:textAllCaps="true"
+            android:id="@+id/btn_accept"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:textColor="#FFF"
+            android:background="@drawable/round_bg"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Accept"
+            android:layout_width="@dimen/_125sdp"
+            android:layout_height="@dimen/_30sdp"/>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kolorfox.watertracker">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+    <application
+        android:fullBackupContent="false"
+        android:fullBackupOnly="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:resizeableActivity="false"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="n">
+
+        <meta-data android:name="applovin.sdk.key"
+            android:value="1hLTsGCiVGTnebTc0V_MThS-v_TJu_4wTtHNZUytaTT9Cr7mtdGmvvi7CUP67BU2WTk5W34Ck54zqSO7fJG-2v"/>
+
+        <activity android:name=".ui.watertrackermain.MainActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:targetApi="n"/>
+        <activity android:name=".ui.goalwater.WaterGoalActivity" />
+        <activity android:name=".ui.startactivity.StartActivityOne">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.userdata.UsersDataActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id" />
+
+        <service
+            android:name=".waterservices.MyJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity android:name=".ui.privacypolice.PrivacyActivity" />
+        <activity android:name=".ui.settingsweight.SetHeightTargetActivity" />
+
+        <service
+            android:name=".waterservices.WaterTrackerService"
+            android:enabled="true"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:permission="TODO" />
+
+        <activity android:name=".ui.watertrackermain.SetWeightsActivity" />
+        <activity android:name=".ui.startactivity.StartActivitySecond" />
+
+
+        <receiver android:name=".waterservices.Alarm" />
+        <receiver android:name=".waterservices.WakeeUpReceiver" />
+        <receiver android:name=".waterservices.BedReceiver" />
+        <receiver android:name=".waterservices.NewsDaysReceiver" />
+    </application>
+
+</manifest>

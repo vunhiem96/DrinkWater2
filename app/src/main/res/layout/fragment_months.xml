@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.historyfragment.WeeksFragment"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:background="#FFF"
+   >
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_weight="6"
+        android:id="@+id/barChart_month"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        />
+    <RelativeLayout
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_weight="3.4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp">
+            <RelativeLayout
+                android:background="@drawable/round_bg_weeks1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_80sdp">
+                <ImageView
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:src="@drawable/raindrop"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_12sdp" />
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_48sdp"
+                    android:textColor="#4AFFFFFF"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_2sdp" />
+                <TextView
+                    android:id="@+id/tv_ml_months"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#FFF"
+                    android:text="@string/_1500_ml"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:layout_above="@id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_9sdp" />
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_alignParentBottom="true"
+                    android:text="Average\nintake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp" />
+            </RelativeLayout>
+            <RelativeLayout
+
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/round_bg_weeks2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_80sdp">
+
+                <ImageView
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:src="@drawable/sea"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:layout_marginLeft="@dimen/_12sdp" />
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_48sdp"
+                    android:textColor="#4AFFFFFF"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_2sdp" />
+                <TextView
+                    android:id="@+id/tv_tbc_month"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#FFF"
+                    android:text="@string/_5_day"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:layout_above="@id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_9sdp" />
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_alignParentBottom="true"
+                    android:text="Drink\nfrequency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/round_bg_weeks3"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_80sdp">
+                <ImageView
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:src="@drawable/success"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginLeft="@dimen/_12sdp" />
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_48sdp"
+                    android:textColor="#4AFFFFFF"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_2sdp" />
+                <TextView
+                    android:id="@+id/tv_completions_month"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#FFF"
+                    android:text="@string/_60"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:layout_above="@id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_9sdp" />
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_alignParentBottom="true"
+                    android:text="Average\ncompletion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <TextView
+            android:textColor="#666666"
+            android:textSize="@dimen/_12ssp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/your_hydrate_habits_are_better_than_2_of_the_npopulation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

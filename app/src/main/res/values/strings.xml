@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Water Tracker</string>
+
+    <!--    Test_id-->
+<!--    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+<!--    <string name="interstitial_ads_id">ca-app-pub-3940256099942544/1033173712</string>-->
+
+<!--        <string name="app_id">ca-app-pub-6562160320611800~9455477561</string>-->
+<!--        <string name="interstitial_ads_id">ca-app-pub-6562160320611800/3029670018</string>-->
+    <!--    id_chính-->
+        <string name="app_id">ca-app-pub-5250340081331627~7340921243</string>
+        <string name="interstitial_ads_id">ca-app-pub-5250340081331627/4575350621</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="number_picker_formatter">%02d</string>
+    <string name="rewrite_water_intake">Rewrite water intake</string>
+    <string name="cancle">Cancle</string>
+    <string name="ok">OK</string>
+    <string name="channel_name">hihi</string>
+    <string name="later_exit">Later</string>
+    <string name="base_link_apk">https://play.google.com/store/apps/details?id=</string>
+    <string name="share_via">Share via</string>
+    <string name="id_developer">NavaTech Inc.</string>
+    <string name="history">History</string>
+    <string name="months">Months</string>
+    <string name="week">Week</string>
+    <string name="today">Today</string>
+    <string name="next_time">Next time</string>
+    <string name="records">Records</string>
+    <string name="_550ml">+550ml</string>
+    <string name="_10_00">10:00</string>
+    <string name="edit">Edit</string>
+    <string name="your_hydrate_habits_are_better_than_2_of_the_npopulation">Your hydrate habits are better than 2% of the population</string>
+    <string name="average_ncompletion">Average completion</string>
+    <string name="_60">60%</string>
+    <string name="_3">3</string>
+    <string name="drink_nfrequency">Drink frequency</string>
+    <string name="_5_day">5/Day</string>
+    <string name="_2">2</string>
+    <string name="average_nintake">Average intake</string>
+    <string name="_1500_ml">1500 ml</string>
+    <string name="_1">1</string>
+
+
+</resources>

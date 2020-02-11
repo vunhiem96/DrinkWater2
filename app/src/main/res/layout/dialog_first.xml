@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000FFFF"
+    >
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:background="@drawable/bg_dialog_first"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp">
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ln_dialog"
+        android:layout_toStartOf="@id/btn_add_dialog"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_toLeftOf="@id/btn_add_dialog"
+        android:orientation="vertical" />
+
+
+    <Button
+        android:textSize="@dimen/_15ssp"
+        android:textColor="#FFF"
+        android:id="@+id/btn_add_dialog"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="100+"
+        android:background="@drawable/bg_button_userdata"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rl"
+        android:layout_width="@dimen/_85sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog"
+    android:orientation="vertical"
+    android:layout_marginEnd="@dimen/_15sdp"
+    android:layout_marginStart="@dimen/_15sdp"
+    >
+
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="#252450"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="To display the notification of drinking water you need to grant permission to display on another application"
+        android:textSize="@dimen/_14ssp" />
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_deny"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="#FFFF"
+            android:background="@drawable/round_bg"
+            android:textAllCaps="false"
+            android:text="Deny"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_10sdp" />
+        <Button
+            android:id="@+id/btn_allow"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="#FFFF"
+            android:background="@drawable/round_bg"
+            android:textAllCaps="false"
+            android:text="Allow"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_10sdp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/background_spalshone">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.9">
+
+        <TextView
+            android:textStyle="italic"
+            android:textSize="@dimen/_25sdp"
+            android:textColor="#FF5722"
+            android:text="NhiemVu Studio"
+            android:layout_above="@id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            />
+
+
+        <TextView
+            android:textStyle="bold"
+            android:fontFamily="@font/font"
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:text="Drink Water"
+            android:textColor="#d8d8d8"
+            android:textSize="@dimen/_10ssp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

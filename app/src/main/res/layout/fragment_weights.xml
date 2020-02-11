@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".fragment.weightfragment.WeightsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Weight"
+            android:textColor="#233BBB"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/img_set_height"
+            android:layout_width="@dimen/_19sdp"
+            android:layout_height="@dimen/_19sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:src="@drawable/ic_set_weight" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:background="@drawable/nenweight"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:layout_weight="3.1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:id="@+id/view"
+                            android:layout_width="3dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_25sdp"
+                            android:layout_marginLeft="@dimen/_25sdp"
+                            android:background="#C6C16A" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_toEndOf="@id/view"
+                            android:layout_toRightOf="@id/view"
+                            android:text="Target"
+                            android:textColor="#80666666"
+                            android:textSize="@dimen/_10ssp" />
+
+                        <TextView
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:id="@+id/tv_target_weights"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_toEndOf="@id/view"
+                            android:layout_toRightOf="@id/view"
+                            android:text="60.7 kg"
+                            android:textColor="#666666"
+                            android:textSize="@dimen/_13ssp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="3dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:layout_marginStart="@dimen/_25sdp"
+                            android:layout_marginLeft="@dimen/_25sdp"
+                            android:background="#C6C16A" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_toEndOf="@id/view2"
+                            android:layout_toRightOf="@id/view2"
+                            android:text="Remaining"
+                            android:textColor="#80666666"
+                            android:textSize="@dimen/_10ssp" />
+
+                        <TextView
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:id="@+id/tv_remain_weights"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_toEndOf="@id/view2"
+                            android:layout_toRightOf="@id/view2"
+                            android:text="60.7 kg"
+                            android:textColor="#666666"
+                            android:textSize="@dimen/_13ssp" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_weight_fragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="80"
+                        android:textColor="#68CCFF"
+                        android:textSize="@dimen/_45sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:layout_toEndOf="@id/tv_weight_fragment"
+                        android:layout_toRightOf="@id/tv_weight_fragment"
+                        android:text="kg"
+                        android:textColor="#68CCFF"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:id="@+id/tv_add_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_weight_fragment"
+                        android:layout_marginStart="@dimen/_1sdp"
+                        android:layout_marginLeft="@dimen/_1sdp"
+                        android:text="+Add weight"
+                        android:textColor="#C0BC6C"
+                        android:textSize="@dimen/_12ssp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_weight="1.6">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="BMI"
+                android:textColor="#666666"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/tv_BMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toEndOf="@id/tv"
+                android:layout_toRightOf="@id/tv"
+                android:text="20.4"
+                android:textColor="#666666"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_marginTop="-5dp"
+                android:id="@+id/img_bmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv"
+                android:src="@drawable/ic_bmi" />
+
+            <RelativeLayout
+                android:layout_marginTop="-5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/img_bmi">
+
+                <TextView
+                    android:id="@+id/tv40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="40"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/_11ssp"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/tv15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/_11ssp" />
+
+                <TextView
+                    android:id="@+id/tv18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_toEndOf="@id/tv15"
+                    android:layout_toRightOf="@id/tv15"
+                    android:text="18.5"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/_11ssp" />
+
+                <TextView
+                    android:id="@+id/tv25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_48sdp"
+                    android:layout_marginLeft="@dimen/_48sdp"
+                    android:layout_toEndOf="@id/tv18"
+                    android:layout_toRightOf="@id/tv18"
+                    android:text="25"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/_11ssp" />
+
+                <TextView
+                    android:id="@+id/tv30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_78sdp"
+                    android:layout_marginRight="@dimen/_78sdp"
+                    android:layout_toStartOf="@id/tv40"
+                    android:layout_toLeftOf="@id/tv40"
+                    android:text="30"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/_11ssp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barCharts"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="5.3" />
+    </LinearLayout>
+
+</LinearLayout>
